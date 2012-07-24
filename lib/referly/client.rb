@@ -6,15 +6,15 @@ module Referly
     base_uri 'https://refer.ly/api/120701'
 
     def initialize(key, secret)
-      self.class.basic_auth key, secret
+      @auth = { username: key, password: secret }
     end
 
-    def post(path, options)
-      self.class.post(path, body: options)
+    def post(path, params)
+      self.class.post(path, body: params, basic_auth: @auth)
     end
 
-    def get(path, options)
-      self.class.get(path, query: options)
+    def get(path, params)
+      self.class.get(path, query: params, basic_auth: @auth)
     end
 
     def accounts

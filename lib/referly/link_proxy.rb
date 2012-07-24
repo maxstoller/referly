@@ -4,12 +4,12 @@ module Referly
       @client = client
     end
 
-    def all(options={})
-      @client.get('/links', options).parsed_response
+    def all(params={})
+      @client.get('/links', params).parsed_response
     end
 
     def create(params={})
-      @client.post('/links', options).parsed_response
+      @client.post('/links', params).parsed_response
     end
   end
 end
