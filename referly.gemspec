@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files         = [
     'README.markdown',
     'Gemfile',
-    'gumroad.gemspec',
+    'referly.gemspec',
     'Rakefile',
     'lib/referly.rb',
     'lib/referly/client.rb',
