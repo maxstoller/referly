@@ -4,8 +4,8 @@ module Referly
       @client = client
     end
 
-    def create(params={})
-      @client.post('/accounts', params)['account_id']
+    def create(options={})
+      @client.post('/accounts', options)['account_id']
     end
   end
 end

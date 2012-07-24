@@ -14,10 +14,16 @@ Gem::Specification.new do |s|
   s.rubyforge_project = 'referly'
 
   s.files         = [
+    'README.markdown',
+    'Gemfile',
+    'gumroad.gemspec',
+    'Rakefile',
     'lib/referly.rb',
     'lib/referly/client.rb',
     'lib/referly/version.rb',
-    'lib/referly/account_proxy.rb'
+    'lib/referly/account_proxy.rb',
+    'lib/referly/link_proxy.rb',
+    'lib/referly/reward_proxy.rb'
   ]
 
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split('\n')
