@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["maxstoller"]
   s.email       = ["maxstoller@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Referly API wrapper}
+  s.description = %q{A Ruby wrapper for the Referly API.}
 
   s.rubyforge_project = "referly"
 
