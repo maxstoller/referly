@@ -5,7 +5,7 @@ module Referly
     end
 
     def all(params={})
-      @client.get('/links', params).parsed_response
+      @client.get('/links', params)['links']
     end
 
     def create(params={})
