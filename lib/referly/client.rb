@@ -4,6 +4,7 @@ module Referly
   class Client
     include HTTParty
     base_uri 'https://refer.ly/api/120701'
+    ssl_version :SSLv3
 
     def initialize(key, secret)
       @auth = { username: key, password: secret }
